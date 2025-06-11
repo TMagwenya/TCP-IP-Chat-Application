@@ -1,0 +1,8 @@
+import socket
+import threading
+from protocol import encode_message, decode_message
+
+HOST = 'localhost'
+PORT = 12345
+
+clients = {}  # socket: username
